@@ -1,12 +1,14 @@
 create table class(
-id int,
-name varchar(45)
+id int not null unique,
+name varchar(45) not null,
+primary key(id)
 );
 
 create table teacher(
-id int,
-name varchar(45),
+id int not null unique,
+name varchar(45) not null,
 age int,
-country varchar(45)
+country varchar(45),
+primary key(id)
 );
 
