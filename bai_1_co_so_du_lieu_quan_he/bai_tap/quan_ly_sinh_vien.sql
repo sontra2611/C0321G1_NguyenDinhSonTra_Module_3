@@ -1,14 +1,14 @@
+use student_management;
+
 create table class(
-id int not null unique,
-name varchar(45) not null,
-primary key(id)
+id int primary key,
+name varchar(45)
 );
 
 create table teacher(
-id int not null unique,
-name varchar(45) not null,
+id int primary key,
+name varchar(45),
 age int,
-country varchar(45),
-primary key(id)
+country varchar(45)
 );
 
