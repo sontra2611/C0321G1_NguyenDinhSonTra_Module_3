@@ -1,34 +1,34 @@
-create database QuanLyBanHang;
+create database quan_ly_ban_hang;
 
-use QuanLyBanHang;
+use quan_ly_ban_hang;
 
-create table Customer(
-	cID varchar(255) primary key,
-    cName varchar(255),
-    cAge int
+create table customer(
+	customer_id varchar(255) primary key,
+    customer_name varchar(255),
+    customer_age int
 );
 
-create table Orderr(
-	oID varchar(255) primary key,
-    cID varchar(255) not null unique,
-    oDate datetime,
-    oTotalPrice double,
-    foreign key(cID) references Customer(cID)
+create table orderr(
+	order_id varchar(255) primary key,
+    customer_id varchar(255) not null unique,
+    order_date datetime,
+    order_total_price double,
+    foreign key(customer_id) references customer(customer_id)
 );
 
-create table Product(
-	pID varchar(255) primary key,
-    pName varchar(255),
-    pPrice double
+create table product(
+	product_id varchar(255) primary key,
+    product_name varchar(255),
+    product_price double
 );
 
-create table OrderDetail(
-	oID varchar(255),
-    pID varchar(255),
-    odQTY varchar(255),
-    primary key(oID,pID),
-    foreign key (oID) references Orderr(oID),
-	foreign key (pID) references Product(pID)
+create table order_detail(
+	order_id varchar(255),
+    product_id varchar(255),
+    order_detail_qty varchar(255),
+    primary key(order_id,product_id),
+    foreign key (order_id) references orderr(order_id),
+	foreign key (product_id) references product(product_id)
 );    
 
 
