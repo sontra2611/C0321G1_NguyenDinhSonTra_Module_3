@@ -10,7 +10,7 @@ create table customer(
 
 create table orderr(
 	order_id varchar(255) primary key,
-    customer_id varchar(255) not null unique,
+    customer_id varchar(255),
     order_date datetime,
     order_total_price double,
     foreign key(customer_id) references customer(customer_id)
@@ -30,6 +30,7 @@ create table order_detail(
     foreign key (order_id) references orderr(order_id),
 	foreign key (product_id) references product(product_id)
 );    
+
 
 
     
