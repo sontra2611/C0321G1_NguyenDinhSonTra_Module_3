@@ -70,7 +70,7 @@ so_tang int,
 so_nguoi_toi_da int,
 chi_phi_thue double,
 id_kieu_thue int,
-IDLoaiDichVu int,
+id_loai_dich_vu int,
 TrangThai varchar(45),
 foreign key(id_kieu_thue) references kieu_thue(id_kieu_thue),
 foreign key(id_loai_dich_vu) references loai_dich_vu(id_loai_dich_vu)
@@ -106,5 +106,4 @@ so_luong int,
 foreign key(id_hop_dong) references hop_dong(id_hop_dong),
 foreign key(id_dich_vu_di_kem) references dich_vu_di_kem(id_dich_vu_di_kem)
 );
-
 
