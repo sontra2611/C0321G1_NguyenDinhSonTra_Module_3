@@ -12,8 +12,8 @@ inner join mark on subject.sub_id = mark.mark_id
 where mark = (select max(mark) from mark);
 
 -- Hiển thị các thông tin sinh viên và điểm trung bình của mỗi sinh viên, xếp hạng theo thứ tự điểm giảm dần--
-select student.student_id, student_name, address, phone, status, class_id, avg(mark) as 'diem_trung_binh'
+select student.student_id, student_name, address, phone, status, class_id, avg(mark) as 'average'
 from student
 inner join mark on student.student_id = mark.student_id
 group by student.student_id
-order by diem_trung_binh desc;
+order by average desc;

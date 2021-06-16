@@ -6,7 +6,9 @@ values
 (2, "Ngoc Anh", 20),
 (3, "Hong Ha", 50);
 
-insert into orderr(order_id,customer_id,order_date)
+RENAME TABLE  `orderr` TO  `order`;
+
+insert into `order`(order_id,customer_id,order_date)
 values
 (1, 1, '2006-03-21 00:00:00'),
 (2, 2, '2006-03-23 00:00:00'),
@@ -32,23 +34,23 @@ values
 
 -- Hiển thị các thông tin  gồm oID, oDate, oPrice của tất cả các hóa đơn trong bảng Order--
 select order_id, order_date, order_total_price
-from orderr;
+from `order`;
 
 -- Hiển thị danh sách các khách hàng đã mua hàng, và danh sách sản phẩm được mua bởi các khách--
 select customer_name, product.product_name
 from customer
-inner join orderr on customer.customer_id = orderr.customer_id
-inner join order_detail on orderr.order_id = order_detail.order_id
+inner join `order` on customer.customer_id = `order`.customer_id
+inner join order_detail on `order`.order_id = order_detail.order_id
 inner join product on order_detail.product_id = product.product_id;
 
 -- Hiển thị tên những khách hàng không mua bất kỳ một sản phẩm nào--
 select customer_name 
 from customer 
-where customer_id not in (select orderr.customer_id from orderr);
+where customer_id not in (select `order`.customer_id from `order`);
 
 -- Hiển thị mã hóa đơn, ngày bán và giá tiền của từng hóa đơn (giá một hóa đơn được tính bằng tổng giá bán của từng loại mặt hàng xuất hiện trong hóa đơn. Giá bán của từng loại được tính = odQTY*pPrice)--
-select orderr.order_id, order_date, sum(order_detail.order_detail_qty * product.product_price)
-from orderr
-inner join order_detail on orderr.order_id = order_detail.order_id
+select `order`.order_id, order_date, sum(order_detail.order_detail_qty * product.product_price)
+from `order`
+inner join order_detail on `order`.order_id = order_detail.order_id
 inner join product on order_detail.product_id = product.product_id
-group by orderr.order_id;
+group by `order`.order_id;
