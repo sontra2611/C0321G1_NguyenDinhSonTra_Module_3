@@ -285,3 +285,21 @@ delimiter ;
 
 select quan_ly_khu_nghi_duong_furama.func_2(2) as "max_thoi_gian_hop_dong";
 
+-- task 30 : Tạo Stored procedure Sp_3 để tìm các dịch vụ được thuê bởi khách hàng với loại dịch vụ là “Room” từ đầu năm 2015 đến hết năm 2019 để xóa thông tin của các dịch vụ đó (tức là xóa các bảng ghi trong bảng DichVu) và xóa những HopDong sử dụng dịch vụ liên quan (tức là phải xóa những bản gi trong bảng HopDong) và những bản liên quan khác.
+delimiter //
+create procedure sp_3()
+begin
+create temporary table bang_tam(select dich_vu.id_dich_vu, hop_dong.id_hop_dong, hop_dong_chi_tiet.id_hop_dong_chi_tiet 
+from dich_vu 
+inner join hop_dong on dich_vu.id_dich_vu = hop_dong.id_dich_vu
+inner join hop_dong_chi_tiet on hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong
+where id_loai_dich_vu = 3 and (year(ngay_lam_hop_dong) between 2015 and 2019));
+
+delete from hop_dong_chi_tiet where id_hop_dong in (select id_hop_dong from hop_dong where id_dich_vu in (select id_dich_vu from bang_tam));
+delete from hop_dong where id_dich_vu in (select id_dich_vu from bang_tam);
+delete from dich_vu where id_dich_vu in (select id_dich_vu from bang_tam);
+end //
+delimiter ;
+
+call sp_3;
+
