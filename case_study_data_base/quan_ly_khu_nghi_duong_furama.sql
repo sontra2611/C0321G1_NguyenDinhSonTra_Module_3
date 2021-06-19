@@ -84,7 +84,6 @@ id_dich_vu int,
 ngay_lam_hop_dong date,
 ngay_ket_thuc date,
 tien_dat_coc double,
-tong_tien double,
 foreign key(id_nhan_vien) references nhan_vien(id_nhan_vien),
 foreign key(id_khach_hang) references khach_hang(id_khach_hang),
 foreign key(id_dich_vu) references dich_vu(id_dich_vu)
