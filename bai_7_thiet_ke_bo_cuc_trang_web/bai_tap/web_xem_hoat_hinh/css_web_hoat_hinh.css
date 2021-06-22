@@ -1,19 +1,21 @@
 .container {
     display: grid;
     grid-template-areas:
-            'header header header'
-            'nav nav nav'
-            'left_menu content content'
-            'footer footer footer';
-    grid-template-columns: 25% 50% 25%;
+            'header header'
+            'nav nav'
+            'left_menu content'
+            'footer footer';
+    grid-template-columns: 25% 75%;
 }
 
 .header {grid-area: header}
 .nav {
+    grid-area: nav;
     margin-top: 10px;
     grid-area: nav;
     text-align: center;
 }
+.left_menu {grid-area: left_menu}
 .content {grid-area: content}
 .footer {grid-area: footer}
 
@@ -91,8 +93,15 @@ iframe {
                 'left_menu'
                 'footer';
     }
+    .header .logo {
+        width: 5%;
+    }
 
-    .content {
+    .header_link {
+        font-size: 10px;
+    }
+
+    .content, .nav {
         display: none;
     }
 }
