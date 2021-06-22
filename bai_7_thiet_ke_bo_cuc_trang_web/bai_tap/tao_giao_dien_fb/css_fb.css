@@ -19,7 +19,7 @@
 .content {grid-area: content}
 
 .leftheader, .header, .rightheader {
-
+    background-color: white;
     position: sticky;
     top: 0px;
 }
@@ -92,6 +92,7 @@ li {
 
 .leftside,.rightside,.content {
     background-color: #f0f2f5;
+    height: 700px;
 }
 
 .img_side {
