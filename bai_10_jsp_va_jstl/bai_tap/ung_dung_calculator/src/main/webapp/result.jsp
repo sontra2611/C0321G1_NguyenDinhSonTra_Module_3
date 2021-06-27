@@ -12,7 +12,6 @@
     <title>Title</title>
 </head>
 <body>
-<% PrintWriter writer = response.getWriter();%>
 <% float firstOperand = Integer.parseInt(request.getParameter("first-operand"));%>
 <% float secondOperand = Integer.parseInt(request.getParameter("second-operand"));%>
 <% char operator = request.getParameter("operator").charAt(0);%>
