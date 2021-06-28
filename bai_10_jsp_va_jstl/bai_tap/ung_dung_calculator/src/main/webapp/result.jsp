@@ -12,18 +12,7 @@
     <title>Title</title>
 </head>
 <body>
-<% float firstOperand = Integer.parseInt(request.getParameter("first-operand"));%>
-<% float secondOperand = Integer.parseInt(request.getParameter("second-operand"));%>
-<% char operator = request.getParameter("operator").charAt(0);%>
-<% String string = null; %>
-<% try {
-    float result = Calculator.calculate(firstOperand, secondOperand, operator);
-    string = firstOperand + " " + operator + " " + secondOperand + " = " + result;
-} catch (Exception ex) {
-    string = "Error: " + ex.getMessage();
-}
-%>
 <h1>Result:</h1>
-<p><%=string%></p>
+<p>${string}</p>
 </body>
 </html>
