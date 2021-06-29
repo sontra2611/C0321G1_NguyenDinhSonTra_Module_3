@@ -3,7 +3,6 @@ package controller;
 import model.bean.Product;
 import model.service.ProductService;
 import model.service.ProductServiceImpl;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,6 +13,7 @@ import java.io.IOException;
 import java.util.List;
 
 @WebServlet(name = "ProductServlet", urlPatterns = {"", "/product"})
+
 public class ProductServlet extends HttpServlet {
 
     ProductService productService = new ProductServiceImpl();

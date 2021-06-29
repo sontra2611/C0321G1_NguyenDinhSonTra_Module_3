@@ -3,8 +3,9 @@ package model.service;
 import model.bean.Product;
 import model.repository.ProductRepository;
 import model.repository.ProductRepositoryImpl;
+import model.service.ProductService;
 
-import java.util.*;
+import java.util.List;
 
 public class ProductServiceImpl implements ProductService {
 
@@ -37,7 +38,6 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Product findByName(String name) {
-      return productRepository.findByName(name);
+        return productRepository.findByName(name);
     }
-
 }
