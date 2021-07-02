@@ -2,32 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07768b50-f6ec-416f-9832-66d341fdfeed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/src/main/java/controller/UserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/src/main/java/model/bean/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/src/main/java/model/repository/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/src/main/java/model/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/src/main/java/model/repository/UserRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/src/main/java/model/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/src/main/java/model/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/src/main/webapp/user/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/src/main/webapp/user/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/src/main/webapp/user/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/src/main/webapp/user/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/src/main/java/com/codegym/controller/UserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/src/main/java/com/codegym/dao/IUserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/src/main/java/com/codegym/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/src/main/java/com/codegym/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/src/main/webapp/user/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/src/main/webapp/user/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/src/main/webapp/user/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/java/model/bean/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/java/model/repository/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/java/model/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/java/model/repository/UserRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/java/model/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/java/model/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/webapp/user/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/webapp/user/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/webapp/user/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/webapp/user/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/src/main/java/com/codegym/controller/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/src/main/java/com/codegym/dao/IUserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/src/main/java/com/codegym/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/src/main/java/com/codegym/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/src/main/webapp/user/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/src/main/webapp/user/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/src/main/webapp/user/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/src/main/java/model/repository/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/src/main/java/model/repository/UserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +173,10 @@
       <workItem from="1625036263606" duration="97000" />
       <workItem from="1625045744764" duration="859000" />
       <workItem from="1625059297817" duration="1737000" />
+      <workItem from="1625191709222" duration="636000" />
+      <workItem from="1625211032713" duration="970000" />
+      <workItem from="1625218445171" duration="283000" />
+      <workItem from="1625221576907" duration="508000" />
     </task>
     <servers />
   </component>

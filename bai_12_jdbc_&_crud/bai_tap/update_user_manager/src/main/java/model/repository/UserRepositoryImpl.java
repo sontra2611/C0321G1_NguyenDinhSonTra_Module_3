@@ -11,6 +11,13 @@ import java.util.List;
 
 public class UserRepositoryImpl implements UserRepository {
 
+    private static final String INSERT_USERS_SQL = "INSERT INTO users(name, email, country) VALUE(?, ?, ?)";
+    private static final String SELECT_FROM_USERS = "select * from users";
+    private static final String DELETE_FROM_USERS_WHERE_ID = "delete from users where id = ?";
+    private static final String UPDATE_USERS_SQL = "update users set name = ?,email= ?, country =? where id = ?";
+    private static final String SELECT_FROM_USERS_WHERE_COUNTRY = "select * from users where country = ?";
+    private static final String SORT_BY_NAME = "select * ,(substring_index(name ,\" \", -1)) as \"first_name\" from users order by first_name";
+
     @Override
     public void insertUser(User user){
         Connection connection = DBConnection.getConnection();
@@ -19,7 +26,7 @@ public class UserRepositoryImpl implements UserRepository {
 
         if(connection != null) {
             try {
-                statement = connection.prepareStatement("INSERT INTO users(name, email, country) VALUE(?, ?, ?)");
+                statement = connection.prepareStatement(INSERT_USERS_SQL);
                 statement.setString(1, user.getName());
                 statement.setString(2, user.getEmail());
                 statement.setString(3, user.getCountry());
@@ -53,7 +60,7 @@ public class UserRepositoryImpl implements UserRepository {
 
         if (connection != null) {
             try {
-                statement = connection.prepareStatement("select * from users");
+                statement = connection.prepareStatement(SELECT_FROM_USERS);
                 resultSet = statement.executeQuery();
                 User user = null;
 
@@ -87,7 +94,7 @@ public class UserRepositoryImpl implements UserRepository {
         PreparedStatement statement = null;
         if (connection != null) {
             try {
-                statement = connection.prepareStatement("delete from users where id = ?");
+                statement = connection.prepareStatement(DELETE_FROM_USERS_WHERE_ID);
                 statement.setInt(1, id);
                 statement.executeUpdate();
             } catch (SQLException throwables) {
@@ -102,7 +109,7 @@ public class UserRepositoryImpl implements UserRepository {
         PreparedStatement statement = null;
         if (connection != null) {
             try {
-                statement = connection.prepareStatement("update users set name = ?,email= ?, country =? where id = ?");
+                statement = connection.prepareStatement(UPDATE_USERS_SQL);
                 statement.setString(1, user.getName());
                 statement.setString(2, user.getEmail());
                 statement.setString(3, user.getCountry());
@@ -123,7 +130,7 @@ public class UserRepositoryImpl implements UserRepository {
 
         if (connection != null) {
             try {
-                statement = connection.prepareStatement("select * from users where country = ?");
+                statement = connection.prepareStatement(SELECT_FROM_USERS_WHERE_COUNTRY);
                 statement.setString(1, inputName);
                 resultSet = statement.executeQuery();
                 User user = null;
@@ -161,7 +168,7 @@ public class UserRepositoryImpl implements UserRepository {
 
         if (connection != null) {
             try {
-                statement = connection.prepareStatement("select * ,(substring_index(name ,\" \", -1)) as \"first_name\" from users order by first_name");
+                statement = connection.prepareStatement(SORT_BY_NAME);
                 resultSet = statement.executeQuery();
                 User user = null;
 
