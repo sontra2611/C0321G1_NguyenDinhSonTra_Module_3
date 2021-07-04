@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07768b50-f6ec-416f-9832-66d341fdfeed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/java/model/bean/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/java/model/repository/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/java/model/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/java/model/repository/UserRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/java/model/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/java/model/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/webapp/user/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/webapp/user/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/webapp/user/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/bai_tap/update_user_manager/src/main/webapp/user/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/src/main/java/com/codegym/controller/UserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/src/main/java/com/codegym/dao/IUserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/src/main/java/com/codegym/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/src/main/java/com/codegym/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/src/main/webapp/user/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/src/main/webapp/user/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../bai_13_jdbc_querying_&amp;_transaction/thuc_hanh/update_user_manager/src/main/webapp/user/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/src/main/java/model/repository/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/bai_tap/update_user_manager/src/main/java/model/repository/UserRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_12_jdbc_&amp;_crud/thuc_hanh/user_manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +145,11 @@
       <workItem from="1625211032713" duration="970000" />
       <workItem from="1625218445171" duration="283000" />
       <workItem from="1625221576907" duration="508000" />
+      <workItem from="1625365264139" duration="796000" />
+      <workItem from="1625381096459" duration="708000" />
+      <workItem from="1625383956762" duration="1218000" />
+      <workItem from="1625386135483" duration="1042000" />
+      <workItem from="1625387960062" duration="288000" />
     </task>
     <servers />
   </component>
@@ -204,54 +177,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1625024508449" />
-    <state width="905" height="186" key="GridCell.Tab.0.bottom" timestamp="1624962460371">
+    <state width="905" height="186" key="GridCell.Tab.0.bottom" timestamp="1625388247802">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="186" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1624962460371" />
-    <state width="905" height="186" key="GridCell.Tab.0.center" timestamp="1624962460370">
+    <state width="905" height="186" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1625388247802" />
+    <state width="905" height="186" key="GridCell.Tab.0.center" timestamp="1625388247802">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="186" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1624962460370" />
-    <state width="905" height="186" key="GridCell.Tab.0.left" timestamp="1624962460370">
+    <state width="905" height="186" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1625388247802" />
+    <state width="905" height="186" key="GridCell.Tab.0.left" timestamp="1625388247802">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="186" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1624962460370" />
-    <state width="905" height="186" key="GridCell.Tab.0.right" timestamp="1624962460370">
+    <state width="905" height="186" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1625388247802" />
+    <state width="905" height="186" key="GridCell.Tab.0.right" timestamp="1625388247802">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="186" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1624962460370" />
-    <state width="905" height="186" key="GridCell.Tab.1.bottom" timestamp="1624962460371">
+    <state width="905" height="186" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1625388247802" />
+    <state width="905" height="186" key="GridCell.Tab.1.bottom" timestamp="1625388247802">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="186" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1624962460371" />
-    <state width="905" height="186" key="GridCell.Tab.1.center" timestamp="1624962460371">
+    <state width="905" height="186" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1625388247802" />
+    <state width="905" height="186" key="GridCell.Tab.1.center" timestamp="1625388247802">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="186" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1624962460371" />
-    <state width="905" height="186" key="GridCell.Tab.1.left" timestamp="1624962460371">
+    <state width="905" height="186" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1625388247802" />
+    <state width="905" height="186" key="GridCell.Tab.1.left" timestamp="1625388247802">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="186" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1624962460371" />
-    <state width="905" height="186" key="GridCell.Tab.1.right" timestamp="1624962460371">
+    <state width="905" height="186" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1625388247802" />
+    <state width="905" height="186" key="GridCell.Tab.1.right" timestamp="1625388247802">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="186" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1624962460371" />
-    <state width="905" height="186" key="GridCell.Tab.2.bottom" timestamp="1624962460371">
+    <state width="905" height="186" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1625388247802" />
+    <state width="905" height="186" key="GridCell.Tab.2.bottom" timestamp="1625388247802">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="186" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1624962460371" />
-    <state width="905" height="186" key="GridCell.Tab.2.center" timestamp="1624962460371">
+    <state width="905" height="186" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1625388247802" />
+    <state width="905" height="186" key="GridCell.Tab.2.center" timestamp="1625388247802">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="186" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1624962460371" />
-    <state width="905" height="186" key="GridCell.Tab.2.left" timestamp="1624962460371">
+    <state width="905" height="186" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1625388247802" />
+    <state width="905" height="186" key="GridCell.Tab.2.left" timestamp="1625388247802">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="186" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1624962460371" />
-    <state width="905" height="186" key="GridCell.Tab.2.right" timestamp="1624962460371">
+    <state width="905" height="186" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1625388247802" />
+    <state width="905" height="186" key="GridCell.Tab.2.right" timestamp="1625388247802">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="186" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1624962460371" />
+    <state width="905" height="186" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1625388247802" />
     <state x="65" y="0" key="new project wizard" timestamp="1625024582477">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
