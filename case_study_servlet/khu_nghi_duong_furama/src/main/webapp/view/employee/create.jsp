@@ -56,13 +56,34 @@
                 <input class="form-control" type="text" name="address" style="width: 80%" value="${employee.address}">
 
                 <label class="mt-2">Position Id :</label>
-                <input class="form-control" type="number" name="positionId" style="width: 80%" value="${employee.positionId}">
+                <select class="form-control" name="positionId" style="width: 80%">
+                    <option value="1" ${employee.positionId == 1 ? 'selected': ''}>Giám đốc</option>
+                    <option value="2" ${employee.positionId == 2 ? 'selected': ''}>Phó Giám Đốc</option>
+                    <option value="3" ${employee.positionId == 3 ? 'selected': ''}>Quản Lý</option>
+                    <option value="4" ${employee.positionId == 4 ? 'selected': ''}>Trưởng Nhóm</option>
+                    <option value="5" ${employee.positionId == 5 ? 'selected': ''}>Trưởng Phòng</option>
+                    <option value="6" ${employee.positionId == 6 ? 'selected': ''}>Nhân Viên</option>
+                </select>
 
                 <label class="mt-2">Education Degree Id :</label>
-                <input class="form-control" type="text" name="educationDegreeId" style="width: 80%" value="${employee.educationDegreeId}">
+                <select class="form-control" name="educationDegreeId" style="width: 80%">
+                    <option value="1" ${employee.educationDegreeId == 1 ? 'selected': ''}>Đại học</option>
+                    <option value="2" ${employee.educationDegreeId == 2 ? 'selected': ''}>Cao Đẳng</option>
+                    <option value="3" ${employee.educationDegreeId == 3 ? 'selected': ''}>Trung Cấp</option>
+                    <option value="4" ${employee.educationDegreeId == 4 ? 'selected': ''}>Khác</option>
+                </select>
 
                 <label class="mt-2">Division Id :</label>
-                <input class="form-control" type="text" name="divisionId" style="width: 80%" value="${employee.divisionId}">
+                <select class="form-control" name="divisionId" style="width: 80%">
+                    <option value="1" ${employee.divisionId == 1 ? 'selected': ''}>Lễ Tân</option>
+                    <option value="2" ${employee.divisionId == 2 ? 'selected': ''}>Buồng Phòng</option>
+                    <option value="3" ${employee.divisionId == 3 ? 'selected': ''}>Ẩm Thực</option>
+                    <option value="4" ${employee.divisionId == 4 ? 'selected': ''}>Kinh Doanh</option>
+                    <option value="5" ${employee.divisionId == 5 ? 'selected': ''}>Hành chính - Nhân Sự</option>
+                    <option value="6" ${employee.divisionId == 6 ? 'selected': ''}>Tài Chính Kế Toán</option>
+                    <option value="7" ${employee.divisionId == 7 ? 'selected': ''}>Kỹ Thuật</option>
+                    <option value="8" ${employee.divisionId == 8 ? 'selected': ''}>An ninh</option>
+                </select>
 
                 <label class="mt-2">Username :</label>
                 <input class="form-control" type="text" name="username" style="width: 80%" value="${employee.username}">

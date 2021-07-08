@@ -31,7 +31,13 @@
                 </c:if>
 
                 <label class="mt-2">Customer Type Id :</label>
-                <input class="form-control" type="number" name="customerTypeId" style="width: 80%" value="${customer.customerTypeId}">
+                <select class="form-control" name="customerTypeId" style="width: 80%">
+                    <option value="1" ${customer.customerTypeId == 1 ? 'selected': ''}>Diamon</option>
+                    <option value="2" ${customer.customerTypeId == 2 ? 'selected': ''}>Platinum</option>
+                    <option value="3" ${customer.customerTypeId == 3 ? 'selected': ''}>Gold</option>
+                    <option value="4" ${customer.customerTypeId == 4 ? 'selected': ''}>Silver</option>
+                    <option value="5" ${customer.customerTypeId == 5 ? 'selected': ''}>Member</option>
+                </select>
 
                 <label class="mt-2">name :</label>
                 <input class="form-control" type="text" name="name" style="width: 80%" value="${customer.name}">

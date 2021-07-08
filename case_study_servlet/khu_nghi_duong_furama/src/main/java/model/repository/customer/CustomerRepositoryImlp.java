@@ -19,7 +19,7 @@ public class CustomerRepositoryImlp implements CustomerRepository {
             "join contract_detail on contract.contract_id = contract_detail.contract_id " +
             "join attach_service on contract_detail.attach_service_id = attach_service.attach_service_id " +
             "join service on contract.service_id = service.service_id " +
-            "group by contract_detail_id";
+            "group by customer.customer_id";
     @Override
     public List<Customer> findAll() {
         List<Customer> customerList = new ArrayList<>();

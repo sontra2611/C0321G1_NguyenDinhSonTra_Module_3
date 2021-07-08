@@ -82,14 +82,7 @@ public class CustomerServlet extends HttpServlet {
             request.setAttribute("messPhone", mapMessage.get("phone"));
             request.setAttribute("messIdCard", mapMessage.get("idCard"));
             request.setAttribute("customer",customer);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("view/customer/edit.jsp");
-            try {
-                dispatcher.forward(request,response);
-            } catch (ServletException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            showFormEdit(request, response);
         }
     }
 

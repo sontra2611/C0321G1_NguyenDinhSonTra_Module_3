@@ -29,7 +29,13 @@
                 </c:if>
 
                 <label class="mt-2">Customer Type Id :</label>
-                <input class="form-control" type="number" name="customerTypeId" style="width: 80%" value="${customer.customerTypeId}">
+                <select class="form-control"  name="customerTypeId" style="width: 80%">
+                    <option value="1">Diamon</option>
+                    <option value="2">Platinum</option>
+                    <option value="3">Gold</option>
+                    <option value="4">Silver</option>
+                    <option value="5">Member</option>
+                </select>
 
                 <label class="mt-2">name :</label>
                 <input class="form-control" type="text" name="name" style="width: 80%" value="${customer.name}">
