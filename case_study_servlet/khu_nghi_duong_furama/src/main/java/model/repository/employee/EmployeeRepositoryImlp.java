@@ -146,7 +146,7 @@ public class EmployeeRepositoryImlp implements EmployeeRepository {
     }
 
     @Override
-    public void update(int id, Employee employee) {
+    public void update(Employee employee) {
         Connection connection = DBConnection.getConnection();
         PreparedStatement statement = null;
 
@@ -164,7 +164,7 @@ public class EmployeeRepositoryImlp implements EmployeeRepository {
                 statement.setInt(9, employee.getEducationDegreeId());
                 statement.setInt(10, employee.getDivisionId());
                 statement.setString(11, employee.getUsername());
-                statement.setInt(12, id);
+                statement.setInt(12, employee.getId());
                 statement.executeUpdate();
             } catch (SQLException throwables) {
                 throwables.printStackTrace();

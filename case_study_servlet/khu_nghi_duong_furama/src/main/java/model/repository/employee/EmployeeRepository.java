@@ -11,7 +11,7 @@ public interface EmployeeRepository {
 
     Employee findById(int id);
 
-    void update(int id, Employee employee);
+    void update(Employee employee);
 
     void remove(int id);
 

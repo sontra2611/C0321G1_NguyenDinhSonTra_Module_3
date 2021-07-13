@@ -135,7 +135,7 @@ public class CustomerRepositoryImlp implements CustomerRepository {
     }
 
     @Override
-    public void update(int id, Customer customer) {
+    public void update(Customer customer) {
         Connection connection = DBConnection.getConnection();
         PreparedStatement statement = null;
 
@@ -151,7 +151,7 @@ public class CustomerRepositoryImlp implements CustomerRepository {
                 statement.setString(7,customer.getPhone());
                 statement.setString(8,customer.getEmail());
                 statement.setString(9,customer.getAddress());
-                statement.setInt(10, id);
+                statement.setInt(10, customer.getId());
                 statement.executeUpdate();
             } catch (SQLException throwables) {
                 throwables.printStackTrace();

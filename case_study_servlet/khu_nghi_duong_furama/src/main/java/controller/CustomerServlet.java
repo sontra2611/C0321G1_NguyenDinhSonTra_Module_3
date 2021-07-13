@@ -67,8 +67,8 @@ public class CustomerServlet extends HttpServlet {
         String email = request.getParameter("email");
         String address = request.getParameter("address");
 
-        Customer customer = new Customer(code, customerTypeId, name, birthday, gender, idCard, phone, email,address);
-        Map<String, String> mapMessage = customerService.update(id, customer);
+        Customer customer = new Customer(id, code, customerTypeId, name, birthday, gender, idCard, phone, email,address);
+        Map<String, String> mapMessage = customerService.update(customer);
         System.out.println(mapMessage);
         if (mapMessage.isEmpty()){
             try {
@@ -82,7 +82,14 @@ public class CustomerServlet extends HttpServlet {
             request.setAttribute("messPhone", mapMessage.get("phone"));
             request.setAttribute("messIdCard", mapMessage.get("idCard"));
             request.setAttribute("customer",customer);
-            showFormEdit(request, response);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("view/customer/edit.jsp");
+            try {
+                dispatcher.forward(request, response);
+            } catch (ServletException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 

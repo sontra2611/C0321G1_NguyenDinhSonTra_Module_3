@@ -12,7 +12,7 @@ public interface EmployeeService {
 
     Employee findById(int id);
 
-    void update(int id, Employee employee);
+    Map<String, String> update(Employee employee);
 
     void remove(int id);
 

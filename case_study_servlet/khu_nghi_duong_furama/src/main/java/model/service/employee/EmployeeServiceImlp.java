@@ -41,8 +41,21 @@ public class EmployeeServiceImlp implements EmployeeService {
     }
 
     @Override
-    public void update(int id, Employee employee) {
-        repository.update(id, employee);
+    public Map<String, String> update(Employee employee) {
+        Map<String, String> mapMessage = new HashMap<>();
+        if (Validate.validateEmail(employee.getEmail()) != null
+                || Validate.validatePhoneNumber(employee.getPhone()) != null
+                || Validate.validateIdCard(employee.getIdCard()) != null
+                || Validate.validateAmount(employee.getSalary()) != null){
+
+            mapMessage.put("email", Validate.validateEmail(employee.getEmail()));
+            mapMessage.put("phone", Validate.validatePhoneNumber(employee.getPhone()));
+            mapMessage.put("idCard", Validate.validateIdCard(employee.getIdCard()));
+            mapMessage.put("salary", Validate.validateAmount(employee.getSalary()));
+        }else {
+            repository.update(employee);
+        }
+        return mapMessage;
     }
 
     @Override

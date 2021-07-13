@@ -42,7 +42,7 @@ public class CustomerServiceImlp implements CustomerService {
     }
 
     @Override
-    public Map<String, String>  update(int id, Customer customer) {
+    public Map<String, String>  update(Customer customer) {
         Map<String, String> mapMessage = new HashMap<>();
         if (Validate.validateCustomerCode(customer.getCode()) != null
                 || Validate.validateEmail(customer.getEmail()) != null
@@ -54,7 +54,7 @@ public class CustomerServiceImlp implements CustomerService {
             mapMessage.put("phone", Validate.validatePhoneNumber(customer.getPhone()));
             mapMessage.put("idCard", Validate.validateIdCard(customer.getIdCard()));
         } else {
-            repository.update(id, customer);
+            repository.update(customer);
         }
 
         return mapMessage;

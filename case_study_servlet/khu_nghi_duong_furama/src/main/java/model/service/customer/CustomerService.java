@@ -12,7 +12,7 @@ public interface CustomerService {
 
     Customer findById(int id);
 
-    Map<String, String>  update(int id, Customer customer);
+    Map<String, String>  update(Customer customer);
 
     void remove(int id);
 

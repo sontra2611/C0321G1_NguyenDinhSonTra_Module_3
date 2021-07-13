@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Title</title>
@@ -31,15 +32,27 @@
 
                 <label class="mt-2">Id Card :</label>
                 <input class="form-control" type="text" name="idCard" style="width: 80%" value="${employee.idCard}">
+                <c:if test="${messIdCard != null}">
+                    <small id="idCard" class="form-text text-danger">${messIdCard}</small>
+                </c:if>
 
                 <label>Salary :</label>
                 <input class="form-control" type="text" name="salary" style="width: 80%" value="${employee.salary}">
+                <c:if test="${messSalary != null}">
+                    <small id="salary" class="form-text text-danger">${messSalary}</small>
+                </c:if>
 
                 <label class="mt-2">Phone :</label>
                 <input class="form-control" type="text" name="phone" style="width: 80%" value="${employee.phone}">
+                <c:if test="${messPhone != null}">
+                    <small id="phone" class="form-text text-danger">${messPhone}</small>
+                </c:if>
 
                 <label class="mt-2">Email :</label>
                 <input class="form-control" type="text" name="email" style="width: 80%" value="${employee.email}">
+                <c:if test="${messEmail != null}">
+                    <small id="email" class="form-text text-danger">${messEmail}</small>
+                </c:if>
 
                 <label class="mt-2">Address :</label>
                 <input class="form-control" type="text" name="address" style="width: 80%" value="${employee.address}">

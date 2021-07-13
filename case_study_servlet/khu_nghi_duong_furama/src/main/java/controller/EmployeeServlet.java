@@ -69,14 +69,29 @@ public class EmployeeServlet extends HttpServlet {
         int educationDegreeId = Integer.parseInt(request.getParameter("educationDegreeId"));
         int divisionId = Integer.parseInt(request.getParameter("divisionId"));
         String username = request.getParameter("username");
-        Employee employee = new Employee(name,birthday, idCard, salary, phone, email, address, positionId, educationDegreeId,divisionId,username);
+        Employee employee = new Employee(id, name,birthday, idCard, salary, phone, email, address, positionId, educationDegreeId,divisionId,username);
 
-        employeeService.update(id,employee);
-
-        try {
-            response.sendRedirect("/employee");
-        } catch (IOException e) {
-            e.printStackTrace();
+        Map<String, String> mapMessage = employeeService.update(employee);
+        if (mapMessage.isEmpty()){
+            try {
+                response.sendRedirect("/employee");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            request.setAttribute("messEmail", mapMessage.get("email"));
+            request.setAttribute("messPhone", mapMessage.get("phone"));
+            request.setAttribute("messIdCard", mapMessage.get("idCard"));
+            request.setAttribute("messSalary", mapMessage.get("salary"));
+            request.setAttribute("employee",employee);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("view/employee/edit.jsp");
+            try {
+                dispatcher.forward(request, response);
+            } catch (ServletException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 

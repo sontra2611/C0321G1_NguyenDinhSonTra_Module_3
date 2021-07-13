@@ -148,7 +148,7 @@ create table customer(
     customer_type_id int not null ,
     customer_name varchar(45) not null ,
     customer_birthday date not null ,
-	customer_gender bit,
+	customer_gender int,
     customer_id_card varchar(45) not null ,
     customer_phone varchar(45) not null,
     customer_email varchar(45),
@@ -191,3 +191,127 @@ values
 ('tháng', 40000000),
 ('ngày', 30000000),
 ('giờ', 20000000);
+
+-- dịch vụ
+create table service(
+service_id int auto_increment primary key, 
+service_code varchar(45) not null ,
+service_name varchar(45) not null,
+service_area int,
+service_cost double not null, 
+service_max_people int,
+rent_type_id int ,
+service_type_id int ,
+standard_room varchar(45),
+description_other_convenience varchar(45),
+pool_area double,
+number_of_floors int ,
+foreign key (rent_type_id) references rent_type(rent_type_id)  on delete cascade on update cascade,
+foreign key (service_type_id) references service_type(service_type_id)  on delete cascade on update cascade
+);
+
+insert into service(service_code, service_name, service_area, service_cost, service_max_people, rent_type_id, service_type_id, standard_room, description_other_convenience, pool_area, number_of_floors)
+values 
+("DV-0001", "villa1", 200, 5000000, 15, 1, 1, "vip", "có hồ bơi", 70, 5),
+("DV-0002", "house1", 100, 2000000, 10, 2, 2, "good", "có hồ bơi", 50, 3),
+("DV-0003", "room1", 50, 1000000, 5, 3, 3, "good", "view đẹp", 0, 2),
+("DV-0003", "room1", 50, 1000000, 3, 4, 3, "normal", "view đẹp", 0, 1);
+
+-- hợp đồng
+create table contract(
+contract_id int auto_increment primary key,
+contract_start_date date not null,
+contract_end_date date not null,
+contract_deposit double not null,
+contract_total_money double not null,
+employee_id int not null,
+customer_id int not null,
+service_id int not null,
+foreign key (employee_id) references employee(employee_id) on delete cascade on update cascade ,
+foreign key (customer_id) references customer(customer_id) on delete cascade on update cascade ,    
+foreign key (service_id) references service(service_id) on delete cascade on update cascade 
+);
+
+insert into contract (contract_start_date, contract_end_date, contract_deposit, contract_total_money, employee_id, customer_id, service_id)
+values
+('2021-03-10', '2021-03-11', 1000000, 10000000, 1, 1, 1),
+('2018-01-11', '2018-02-11', 1000000, 5000000, 2, 2, 2),
+('2019-11-10', '2020-02-10', 1000000, 10000000, 3, 3, 3),
+('2021-01-20', '2021-01-21', 1000000, 5000000, 4, 4, 1),
+('2021-03-09', '2021-04-09', 1000000, 10000000, 5, 5, 2),
+('2021-04-30', '2021-04-30', 1000000, 5000000, 6, 6, 4),
+('2021-03-10', '2021-04-10', 1000000, 10000000, 7, 1, 2),
+('2019-12-10', '2020-02-10', 1000000, 5000000, 1, 2, 3),
+('2019-03-10', '2020-03-10', 1000000, 10000000, 2, 3, 4);
+
+-- dịch vụ đi kèm
+ create table attach_service (
+attach_service_id int auto_increment primary key,
+attach_service_name varchar(45) not null,
+attach_service_cost int not null,
+attach_service_unit int not null,
+attach_service_status varchar(45)
+);
+
+insert into attach_service (attach_service_name, attach_service_cost, attach_service_unit, attach_service_status)
+values
+('karaoke', 200000, 1, 'mở'),
+('massage', 500000, 1, 'mở'),
+('thuê xe', 100000, 1, 'mở');
+
+-- hợp đồng chi tiết
+create table contract_detail(
+contract_detail_id int auto_increment primary key,
+contract_id int ,
+attach_service_id int ,
+quantity int not null,
+foreign key (contract_id) references contract(contract_id)  on delete cascade on update cascade,
+foreign key (attach_service_id) references attach_service(attach_service_id)  on delete cascade on update cascade
+);
+
+insert into contract_detail (contract_id,attach_service_id,quantity)
+values
+(1, 1, 2),
+(2, 1, 3),
+(3, 2, 1),
+(4, 3, 5),
+(5, 1, 3),
+(6, 2, 2),
+(7, 3, 2),
+(2, 1, 2),
+(8, 1, 2);
+
+select * from customer
+join customer_type on customer.customer_type_id = customer_type.customer_type_id;
+
+select * from customer join customer_type on customer.customer_type_id = customer_type.customer_type_id where customer_name = "Nguyễn Đình Sơn Trà";
+
+select * from employee 
+join position on employee.position_id = position.position_id
+join education_degree on employee.education_degree_id = education_degree.education_degree_id
+join division on employee.division_id = division.division_id;
+
+select * from employee where employee_id = 1;
+
+select * from service
+join rent_type on service.rent_type_id = rent_type.rent_type_id
+join service_type on service.service_type_id = service_type.service_type_id;
+
+select * from contract
+join customer on contract.customer_id = customer.customer_id
+join employee on contract.employee_id = employee.employee_id
+join service on contract.service_id = service.service_id;
+
+select * from contract_detail
+join attach_service on contract_detail.attach_service_id = attach_service.attach_service_id;
+
+insert into contract_detail (contract_id,attach_service_id,quantity) values (1, 1, 1);
+
+select * , sum(service_cost + quantity * attach_service_cost) as total_money from customer 
+join contract on customer.customer_id = contract.customer_id 
+join contract_detail on contract.contract_id = contract_detail.contract_id 
+join attach_service on contract_detail.attach_service_id = attach_service.attach_service_id
+join service on contract.service_id = service.service_id
+group by contract_detail_id;
+
+update customer set customer_code = "KH-1010" ,customer_type_id = 1, customer_name = "Nguyễn Đình Sơn Trà", customer_birthday = "1997-11-26", customer_gender = 0, customer_id_card = '100261197', customer_phone = '905261197', customer_email = 'tranguyen@gmail.com', customer_address = 'Đà Nẵng' where customer_id = 1
